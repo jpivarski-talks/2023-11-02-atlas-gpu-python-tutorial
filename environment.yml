@@ -1,0 +1,19 @@
+name: 2023-11-02-atlas-gpu-python-tutorial
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10.13      # constrained to 3.10 by CuDF
+  - cudatoolkit=11.6.0  # match locally installed CUDA
+
+  - ipykernel=6.26.0    # direct dependencies pinned to latest (2023-10-28)
+  - pytorch-gpu=2.0.0
+  - pycuda=2022.2.2
+  - cupy=11.6.0
+  - numba=0.57.1
+  - awkward=2.4.6
+  - uproot=5.1.2
+  - vector=1.1.1.post1
+  - hist=2.7.2
+  - rapidsai::cudf=23.02.00
