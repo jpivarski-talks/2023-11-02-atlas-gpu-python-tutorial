@@ -13,14 +13,15 @@ wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge
 bash Miniforge3-Linux-x86_64.sh -b
 ```
 
-4. Still in the terminal, install this git repo:
+4. Close this terminal and open a new one.
+5. In the new the terminal, install this git repo:
 
 ```bash
 git clone https://github.com/jpivarski-talks/2023-11-02-atlas-gpu-python-tutorial.git
 cd 2023-11-02-atlas-gpu-python-tutorial
 ```
 
-5. Still in the terminal, install all the Python packages in an environment and activate it:
+5. Still in the new terminal, install all the Python packages in an environment and activate it:
 
 ```bash
 mamba env create -f environment.yml
@@ -29,7 +30,7 @@ mamba activate 2023-11-02-atlas-gpu-python-tutorial
 
 (environment.lock.yml is an alternative in case versions change in the far future.)
 
-6. Install this kernel into the already-running Jupyter:
+6. Still in the new terminal, install the environment as a new kernel in the already-running Jupyter:
 
 ```bash
 python -m ipykernel install --prefix=/usr/local/ --name 2023-11-02-atlas-gpu-python-tutorial
