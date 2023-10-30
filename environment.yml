@@ -16,4 +16,5 @@ dependencies:
   - uproot=5.1.2
   - vector=1.1.1.post1
   - hist=2.7.2
+  - xrootd=5.6.2
   - rapidsai::cudf=23.02.00
