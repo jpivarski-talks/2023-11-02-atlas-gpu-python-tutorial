@@ -2,7 +2,7 @@
 
 Thursday, November 2, 2023. This is the Python part of the [ATLAS GPU Training](https://indico.cern.ch/event/1331139/overview).
 
-## Working on instructions
+## Draft instructions
 
 1. Launch your DLI Jupyter.
 2. Click the blue `+` button and black `$_` terminal button.
@@ -38,3 +38,17 @@ python -m ipykernel install --prefix=/usr/local/ --name 2023-11-02-atlas-gpu-pyt
 7. Click the blue `+` button and "2023-11-02-atlas-gpu-python-tutorial" should be available as an alternate kernel. Notebooks created with this kernel will have all of the Python packages, as will any notebooks in which you "Change kernel..." ("Kernel" menu) to this kernel.
 
 The notebooks for this tutorial are in the 2023-11-02-atlas-gpu-python-tutorial folder (see the file browser in the left panel).
+
+## Draft schedule
+
+* **0:00** (30 min) Introduce the Python tools
+* **0:30** (20 min) Compute the Z mass in CUDA with Numba
+* **0:50** (20 min) Introduce tree-reduction
+* **1:10** (20 min) Students work on Project 1: histogram-filling
+* **1:30** (5 min) _break_
+* **1:35** (20 min) Review Project 1 solutions
+* **1:55** (20 min) Introduce random seeding of parallel algorithms
+* **2:15** (20 min) Students work on Project 2: compute π
+* **2:35** (5 min) _break_
+* **2:40** (20 min) Review Project 2 solutions
+* **3:00** _end_
