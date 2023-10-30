@@ -11,24 +11,25 @@ Thursday, November 2, 2023. This is the Python part of the [ATLAS GPU Training](
 ```bash
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
 bash Miniforge3-Linux-x86_64.sh -b
+~/mambaforge/bin/mamba init bash
 ```
 
-4. Close this terminal and open a new one.
-5. In the new the terminal, install this git repo:
+4. **Close this terminal and open a new one.**
+5. In the **new** the terminal, install this git repo:
 
 ```bash
 git clone https://github.com/jpivarski-talks/2023-11-02-atlas-gpu-python-tutorial.git
 cd 2023-11-02-atlas-gpu-python-tutorial
 ```
 
-5. Still in the new terminal, install all the Python packages in an environment and activate it:
+5. Install all the Python packages in an environment and activate it:
 
 ```bash
 echo y | mamba env create -f environment.yml   # or environment.lock.yml
 mamba activate 2023-11-02-atlas-gpu-python-tutorial
 ```
 
-6. Still in the new terminal, install the environment as a new kernel in the already-running Jupyter:
+6. Install the environment as a new kernel in the already-running Jupyter:
 
 ```bash
 python -m ipykernel install --prefix=/usr/local/ --name 2023-11-02-atlas-gpu-python-tutorial
