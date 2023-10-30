@@ -11,7 +11,7 @@ Thursday, November 2, 2023. This is the Python part of the [ATLAS GPU Training](
 ```bash
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
 bash Miniforge3-Linux-x86_64.sh -b
-/root/miniforge3/bin/mamba init bash
+~/miniforge3/bin/mamba init bash
 ```
 
 4. **Close this terminal and open a new one.**
