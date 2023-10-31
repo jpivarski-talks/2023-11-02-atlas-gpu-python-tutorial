@@ -2,7 +2,11 @@
 
 Thursday, November 2, 2023. This is the Python part of the [ATLAS GPU Training](https://indico.cern.ch/event/1331139/overview).
 
-## Draft instructions
+If you're participating as a registered student on November 2, log into the NVIDIA Deep Learning Institute and follow the setup instructions below.
+
+If you're following this tutorial offline or want to use your own computer (note: you need an NVIDIA GPU with CUDA installed), use the [environment.yml](environment.yml) or [environment.lock.yml](environment.lock.yml) in [your conda installation](https://scikit-hep.org/user/installing-conda) or install the packages manually. You may use newer versions of those packages; the versions are pinned to reproduce the exact environment we had on November 2.
+
+## Setup instructions
 
 1. Launch your DLI Jupyter.
 2. Click the blue `+` button and black `$_` terminal button.
@@ -39,16 +43,16 @@ python -m ipykernel install --prefix=/usr/local/ --name 2023-11-02-atlas-gpu-pyt
 
 The notebooks for this tutorial are in the 2023-11-02-atlas-gpu-python-tutorial folder (see the file browser in the left panel).
 
-## Draft schedule
+## Schedule
 
-* **0:00** (30 min) Introduce the Python tools
+* **0:00** (30 min) Introduce the Python tools; see [lecture-slides.ipynb](lecture-slides.ipynb)
 * **0:30** (20 min) Compute the Z mass in CUDA with Numba
 * **0:50** (20 min) Introduce tree-reduction
-* **1:10** (20 min) Students work on Project 1: parallel histogram filling
+* **1:10** (20 min) Students work on [Project 1: parallel histogram filling](projects/project-1-fill-histograms.ipynb)
 * **1:30** (5 min) _break_
-* **1:35** (20 min) Review Project 1 solutions
+* **1:35** (20 min) Review [Project 1 solutions](solutions/project-1-fill-histograms.ipynb) _(don't peek until you've tried it!)_
 * **1:55** (20 min) Introduce random seeding of parallel algorithms
-* **2:15** (20 min) Students work on Project 2: compute area by random sampling
+* **2:15** (20 min) Students work on [Project 2: compute area by random sampling](projects/project-2-compute-area.ipynb)
 * **2:35** (5 min) _break_
-* **2:40** (20 min) Review Project 2 solutions
+* **2:40** (20 min) Review [Project 2 solutions](solutions/project-2-compute-area.ipynb) _(don't peek until you've tried it!)_
 * **3:00** _end_
