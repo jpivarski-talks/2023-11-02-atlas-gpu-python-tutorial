@@ -33,11 +33,15 @@ echo y | mamba env create -f environment.yml   # or environment.lock.yml
 mamba activate 2023-11-02-atlas-gpu-python-tutorial
 ```
 
+(It can take several minutes for this step to complete.)
+
 6. Install the environment as a new kernel in the already-running Jupyter:
 
 ```bash
 python -m ipykernel install --prefix=/usr/local/ --name 2023-11-02-atlas-gpu-python-tutorial
 ```
+
+(After this step, it can take a few seconds for Jupyter to notice the new kernel. Closing and reopening the launcher can make it happen sooner.)
 
 7. Click the blue `+` button and "2023-11-02-atlas-gpu-python-tutorial" should be available as an alternate kernel. Notebooks created with this kernel will have all of the Python packages, as will any notebooks in which you "Change kernel..." ("Kernel" menu) to this kernel.
 
